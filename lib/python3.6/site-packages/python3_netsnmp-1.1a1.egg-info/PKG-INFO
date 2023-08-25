@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: python3-netsnmp
+Version: 1.1a1
+Summary: The Net-SNMP Python Interface
+Home-page: http://www.net-snmp.org
+Author: G. S. Marzot
+Author-email: giovanni.marzot@sparta.com
+License: BSD
+Description: 
+        Python3 port of the official Net-SNMP Python bindings.
+        
+        Maintainer: Christian Svensson <blue@cmd.nu>
+        
+        Source: https://github.com/bluecmd/python3-netsnmp
+        
+Platform: UNKNOWN
