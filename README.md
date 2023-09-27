@@ -9,4 +9,4 @@
 - **Name**: Borna Oršulić
 - **GitHub**: [bornaorsulic](https://github.com/bornaorsulic)
 - **Email**: borna.orsulic2@gmail.com
-- **Link to project**: 
+- **Link to project**: https://github.com/bornaorsulic/Sedam-IT_praksa
