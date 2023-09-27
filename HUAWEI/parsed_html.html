@@ -1,0 +1,2379 @@
+<html class="LANG-en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="IE=10" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport"/>
+  <title>
+   Info-Finder (Online Tools) Lifecycle Query
+  </title>
+  <link href="//www.huawei.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="//www.huawei.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="//www.huawei.com/favicon.ico" rel="Bookmark" type="image/x-icon"/>
+  <link href="/info-finder/pages/commonFile/plugIn/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+  <link defer="defer" href="/info-finder/pages/commonFile/plugIn/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/info-finder/pages/commonFile/plugIn/filter/filter-css.css?v=1695205408806" rel="stylesheet" type="text/css"/>
+  <link href="/info-finder/pages/commonFile/plugIn/pagination/style.css?v=1695205408806" rel="stylesheet" type="text/css"/>
+  <link href="/info-finder/pages/commonFile/plugIn/zTree3.5.48/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css"/>
+  <link href="/info-finder/pages/QuickQuery/tools/css/infoEox_UX.css?v=1695205408806" rel="stylesheet"/>
+  <link href="/info-finder/pages/QuickQuery/common/css/calendar.css" rel="stylesheet"/>
+  <iframe id="hwa_f" src="javascript:false" style="display: none;">
+  </iframe>
+  <script charset="utf-8" src="/info-finder/pages/commonFile/plugIn/jquery/jquery.min.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/commonFile/plugIn/jquery-ui/jquery-ui.min.js" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/commonFile/plugIn/multiDropDownBox/multiDropdownBox.js?v=1695205408806" type="text/javascript">
+  </script>
+  <script async="" id="UEMTrackerload" src="https://hwa.his.huawei.com/hwa/open/trackerload?appId=f943da07953b09ca52368c7dbc843696&amp;platform=web">
+  </script>
+ </head>
+ <body>
+  <input id="common-chang-path" type="hidden" value="/info-finder"/>
+  <input id="lang" type="hidden" value="en"/>
+  <input id="domain" type="hidden" value="0"/>
+  <input id="domainStr" type="hidden" value="enterprise"/>
+  <input id="buildVersion" style="display: none;" value="?v=1695205408806"/>
+  <input id="whichPage" type="hidden" value="infofinder-tools"/>
+  <input id="isTest" type="hidden" value="pro"/>
+  <input id="appId" type="hidden" value="com.huawei.onlinetools"/>
+  <input id="getEnDataFromGraph" style="display: none" value=""/>
+  <input ;="" id="topicType" style="display: none" value="eox"/>
+  <input id="surveyModule" type="hidden" value="eox"/>
+  <input id="userId" style="display: none;" value="anonymous"/>
+  <input id="i18n_publics" style="display: none;" value="Version"/>
+  <input id="i18n_versions" style="display: none;" value="All"/>
+  <input id="i18n_selectVersion" style="display: none;" value="Please Select Version"/>
+  <input id="mid_more" style="display: none;" value="more"/>
+  <input id="mid_less" style="display: none;" value="less"/>
+  <!-- 意见反馈 -->
+  <!-- getProductInfoByToolAndPbiId方法需要参数 -->
+  <input id="subSeriesPbiId" style="display:none;" value=""/>
+  <input id="seriesPbiId" style="display:none;" value="19896202"/>
+  <input id="modelPbiId" style="display:none;" value=""/>
+  <input id="i18n_productModel" style="display: none;" value="Product Model"/>
+  <input id="i18n_eom" style="display: none;" value="End of Marketing (EOM)"/>
+  <input id="i18n_eos" style="display: none;" value="End of Service (EOS)"/>
+  <input id="i18n_productVersion" style="display: none;" value="Product Version"/>
+  <input id="i18n_eofs" style="display: none;" value="End of Full Support (EOFS)"/>
+  <input id="i18n_status" style="display: none;" value="Life Cycle Status"/>
+  <input id="i18n_reference" style="display: none;" value="Note:&lt;/wrap&gt;
+1. This tool is used to query the EOM, EOFS, and EOS dates planned for a product or version. &lt;/wrap&gt;
+2. Generally, Huawei releases a life cycle announcement six months prior to the planned EOM/EOFS/EOS date. EOM, EOFS, and EOS dates are displayed as Not announced if the planned EOM date is more than six months in the future."/>
+  <input id="i18n_reference_huawei" style="display: none;" value="Notes:&lt;/wrap&gt;
+1.This tool can be used to query the planned EOM, EOFS, and EOS dates of a product or a software version.&lt;/wrap&gt;"/>
+  <input id="i18n_newtopic" style="display: none;" value="3.EOM: End of Marketing   EOFS: End of Full Support    EOS: End of Service and Support. For details, see&lt;a href=https://support.huawei.com/enterprise/en/warranty-policy target=_blank style=color:blue;&gt; Life cycle announcement strategy&lt;/a&gt;."/>
+  <input id="i18n_newtopic_huawei" style="display: none;" value="2.EOM: End of Marketing   EOFS: End of Full Support    EOS: End of Service and Support. For details, see&lt;a href=https://support.huawei.com/enterprise/en/warranty-policy target=_blank style=color:blue;&gt; Life cycle announcement strategy&lt;/a&gt;."/>
+  <input id="i18n_reference_infofinderBack" style="display: none;" value="If you want to perform extensive searches such as checking the hardware/software EOM and EOS details about multiple products, use"/>
+  <input id="i18n_reference_toolLink" style="display: none;" value="Huawei EOM, EOFS, and EOS Date Query for Network Products."/>
+  <input id="contextPathInput" type="hidden" value="/info-finder"/>
+  <input id="i18n_publics" style="display: none;" value="Version"/>
+  <input id="i18n_selectVersion" style="display: none;" value="Please Select Version"/>
+  <input id="i18n_versions" style="display: none;" value="All"/>
+  <input id="typeproduct_model" style="display: none;" value="Product model"/>
+  <input id="typeproduct_version" style="display: none;" value="Type Product Version"/>
+  <input id="selectproduct_version" style="display: none;" value="Product lifecycle"/>
+  <input id="selectproduct_soft" style="display: none;" value="Software version lifecycle"/>
+  <input id="last_version" style="display: none;" value="(Latest version)"/>
+  <input id="softWareSwitch" style="display: none;" value=""/>
+  <input id="inputtextPro" style="display: none;" value="Enter a product keyword"/>
+  <input id="inputtextKey" style="display: none;" value="Enter a version keyword"/>
+  <input id="allSelect-li" type="hidden" value="All"/>
+  <input id="EOMSelect-li" type="hidden" value="End of Marketing (EOM)"/>
+  <input id="EOSSelect-li" type="hidden" value="End of Service (EOS)"/>
+  <input id="EOSFSelect-li" type="hidden" value="End of Full Support (EOFS)"/>
+  <input id="referer" style="display:none;" value=""/>
+  <style type="text/css">
+   body {
+		background-attachment:fixed;
+	}
+	#top {
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		background-color: #EEE;
+		cursor: pointer;
+		_position:absolute;
+		z-index:999;
+	}
+	.myclearfix{text-decoration:underline;color:#f00;cursor: pointer;}
+  </style>
+  <link href="/info-finder/pages/commonFile/css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="/info-finder/pages/commonFile/plugIn/dialogTip/dialogTip.css?v=1695205408806" rel="stylesheet" type="text/css"/>
+  <link href="/info-finder/pages/commonFile/css/infoHead.css?v=1695205408806" rel="stylesheet" type="text/css"/>
+  <link as="style" href="/info-finder/pages/commonFile/css/share.css?v=1695205408806" onload="this.onload=null;this.rel='stylesheet'" rel="stylesheet"/>
+  <noscript>
+   <link href="/info-finder/pages/commonFile/css/share.css?v=1695205408806" rel="stylesheet"/>
+  </noscript>
+  <input id="i18n_systembusy" name="i18n_systembusy" type="hidden" value="The system is busy. Try again later."/>
+  <input id="enterpriseurl" type="hidden" value="e.huawei.com"/>
+  <input id="supporturl" type="hidden" value="support.huawei.com"/>
+  <input id="isTest" type="hidden" value="pro"/>
+  <input id="mySpaceAndRedirectUrl" type="hidden" value=""/>
+  <input id="language" type="hidden" value="en"/>
+  <input id="domainStr" type="hidden" value="enterprise"/>
+  <input id="userInfo" type="hidden" value=""/>
+  <input id="i18n-login" type="hidden" value="Login"/>
+  <input id="i18n-logout" type="hidden" value="Logout"/>
+  <input id="uniqueUrl" type="hidden" value="search"/>
+  <input id="isManager" style="display: none" value=""/>
+  <input id="thisPage" style="display: none" value="UXtools"/>
+  <input id="isTest" style="display: none" value="pro"/>
+  <input id="reLoginTips" type="hidden" value="Login timed out. Please log in again."/>
+  <input id="solutionUrl" style="display: none" value="//info.support.huawei.com/network/ptmngsys/Web/solution/"/>
+  <input id="isLogin" type="hidden" value="false"/>
+  <input id="loginPreURL" type="hidden" value="https://uniportal.huawei.com/uniportal1/?redirect="/>
+  <input id="page_id" type="hidden" value=""/>
+  <input id="pdu_name" type="hidden" value=""/>
+  <input id="uem_test_code" type="hidden" value=""/>
+  <input id="uem_code" type="hidden" value=""/>
+  <div id="productInfoTool" style="display: none">
+  </div>
+  <input id="isHideModelSelect" type="hidden" value=""/>
+  <input id="isHideCategorySelect" type="hidden" value=""/>
+  <input id="categoryName" type="hidden" value="eom-eofs-and-eos-date"/>
+  <input id="mappingProductLevel" type="hidden" value=""/>
+  <input id="pageType" type="hidden" value="tool"/>
+  <!-- UEM埋码可能用到的自定义数据 -->
+  <input id="referer" type="hidden" value=""/>
+  <input id="hidden_o3" type="hidden" value=""/>
+  <div id="uemIdMap" style="display: none">
+   {
+    "license": {
+        "pageId": "P30AF777DACF0B4",
+        "change": "P30AF777DACF0B4_C30AD5625B000FF",
+        "search": "P30AF777DACF0B4_C30AD56238AF707",
+        "export": "P30AF777DACF0B4_C30AD56286D8C78",
+        "compareChange": "P30AF777DACF0B4_C369448F56D0564",
+        "compareExport": "P30AF777DACF0B4_C369462C3911925"
+    },
+    "alarm": {
+        "pageId": "P30AF77796A4AAF",
+        "change": "P30AF77796A4AAF_C30AD562523BD37",
+        "search": "P30AF77796A4AAF_C30AD5627EF87B8",
+        "export": "P30AF77796A4AAF_C30AD562869A818"
+    },
+    "command": {
+        "pageId": "P30AF777CC3A382",
+        "change": "P30AF777CC3A382_C30AD5626F621B4",
+        "search": "P30AF777CC3A382_C30AD56267C9846",
+        "export": "P30AF777CC3A382_C30AD56271C2478"
+    },
+    "log": {
+        "pageId": "P30AF777AD81CAF",
+        "change": "P30AF777AD81CAF_C30AD5625C61E14",
+        "search": "P30AF777AD81CAF_C30AD5626C21ABD",
+        "export": "P30AF777AD81CAF_C30AD5623F239DB"
+    },
+    "mib": {
+        "pageId": "P30AF777C1AE8E7",
+        "change": "P30AF777C1AE8E7_C30AD5625F455CA",
+        "search": "P30AF777C1AE8E7_C30AD5625946B64",
+        "export": "P30AF777C1AE8E7_C30AD562798CDCA"
+    },
+    "speccenter": {
+        "pageId": "P35F982B486A8AE",
+        "queryChange": "P35F982B486A8AE_C36342765EAE1B8",
+        "exportChange": "P35F982B486A8AE_C363736ADBBFF37",
+        "compareChange": "P35F982B486A8AE_C3637A8CA578E0E",
+        "changeTab": "P35F982B486A8AE_C363566D0CC6FA2",
+        "keyExport": "P35F982B486A8AE_C363080B3A21095",
+        "allExport": "P35F982B486A8AE_C36338E990A2C9C",
+        "compareExport": "P35F982B486A8AE_C3637451EC1A240",
+        "compareOnly": "P35F982B486A8AE_C3633EAEE41A586",
+        "queryOnly": "P35F982B486A8AE_C3637975C2B7DDE",
+        "onlyDiff": "P35F982B486A8AE_C3633F2A766A072"
+    },
+    "hardwarecenter": {
+        "pageId": "P7D11FBF634F227",
+        "productChange": "P7D11FBF634F227_C3634B833146751",
+        "componentChange":"P7D11FBF634F227_C54F7F3478F9408",
+        "search": "P7D11FBF634F227_C36311517DB3CF8",
+        "autoComplete": "P7D11FBF634F227_C36366F8DB035FF",
+        "detail": "P7D11FBF634F227_C3ECACB38A9969E",
+        "bundle": "P7D11FBF634F227_C3ECB2CF02A858D",
+        "card":"P7D11FBF634F227_C54F812D933DB5B",
+        "noData":"P7D11FBF634F227_C54F468CF2B68B3"
+    },
+    "eox": {
+        "pageId": "P35FD4609257BCF",
+        "versionChange": "P35FD4609257BCF_C3635B1C646AF3A",
+        "productChange": "P35FD4609257BCF_C3631E8E14DE913",
+        "versionSearch": "P35FD4609257BCF_C3635DA06692A24",
+        "productSearch": "P35FD4609257BCF_C363223D9825341",
+        "productFilter": "P35FD4609257BCF_C3632695D0A3B45",
+        "versionFilter": "P35FD4609257BCF_C36326C0E5AF467"
+    },
+    "web3d": {
+        "pageId": "P35F982B788DD97",
+        "productChange": "P35F982B788DD97_C36364EC95C59E7",
+        "componentChange":"",
+        "search": "P35F982B788DD97_C3632A637DC9AB4",
+        "autoComplete": "P35F982B788DD97_C363659B52815FA",
+        "card":"P35F982B788DD97_C54F5AE505152EF",
+        "noData":"P35F982B788DD97_C54F95FEAB733EC"
+    },
+    "image": {
+        "pageId": "P7D11FBF8E77008",
+        "change": "P7D11FBF8E77008_C363304AAC21E13",
+        "search": "P7D11FBF8E77008_C3636821D81758D",
+        "autoComplete": "P7D11FBF8E77008_C363686EE67E3C1",
+        "download": "P7D11FBF8E77008_C36367F13B304FD",
+        "card":"P7D11FBF8E77008_C54F4B3105360AA",
+        "noData":"P7D11FBF8E77008_C54F86662DFF78B"
+    },
+    "hdcfg": {
+        "pageId": "P7D11FBF6F61101",
+        "change": "P7D11FBF6F61101_C36369BC8202E69",
+        "search": "P7D11FBF6F61101_C36369B703F5DFE",
+        "autoComplete": "P7D11FBF6F61101_C36369FE69C0BA8",
+        "card":"P7D11FBF6F61101_C54F5C54A646D97",
+        "noData":"P7D11FBF6F61101_C54F97A59C2DE62"
+    },
+    "productOverView": {
+        "pageId": "P7D11FBF6F02C85",
+        "skip": "P7D11FBF6F02C85_C3EE45C5395FC86"
+    },
+    "packetformat": {
+        "pageId": "P3EDD9D4A61074D",
+        "search": "P3EDD9D4A61074D_C3EE45C4FBE374F",
+        "view": "P3EDD9D4A61074D_C3EE45C5189CA8C"
+    },
+    "informationSearchCenterAllTool": {
+        "pageId": "P3EDD9D4B3BD408"
+    },
+    "informationProductSelect": {
+        "pageId": "P3EDD9D49763525",
+        "search": "P3EDD9D49763525_C3EE45C4EB2C0B8"
+    },
+    "informationManual": {
+        "pageId": "P4C553553F3D712",
+        "configurationFileImporte": "P4C553553F3D712_C4DD823C732D557",
+        "preview": "P4C553553F3D712_C4DD823C93F5B33",
+        "downloadIMG": "P4C553553F3D712_C4DD823CA986C25",
+        "calculation": "P4C553553F3D712_C4DD823C732D557",
+        "clearConfiguration": "P4C553553F3D712_C4DD823C5D30594",
+        "inputSingle": "P4C553553F3D712_C4DD823C4ED3E55",
+        "inputBatch": "P4C553553F3D712_C4DD823C69E2EFF"
+    },
+	"vqt2RecVersion": {
+        "pageId": "P64049F5404C3D2",
+        "filer": "P64049F5404C3D2_C6847A7312132AB",
+		"search": "P64049F5404C3D2_C6847AD596440F3",
+		"link": "P64049F5404C3D2_C684B5A820E402A"
+    },
+	"vqt2AcApMap": {
+        "pageId": "P72303D275DECBF",
+        "export": "P72303D275DECBF_C7230523101FC5F"
+}
+}
+  </div>
+  <input id="dialog-title" style="display: none" value="Tips"/>
+  <input id="dialog-message-nologin" style="display: none" value="Log in to obtain more information."/>
+  <input id="dialog-message-unknow" style="display: none" value="First go to the support website to log in. If you can log in successfully, your account has been registered on the support website."/>
+  <input id="dialog-message-uplevel" style="display: none" value="You do not have the permission of Huawei engineers. To obtain more information, you are advised to escalate your permission."/>
+  <input id="dialog-btn-login" style="display: none" value="Login"/>
+  <input id="dialog-btn-go" style="display: none" value="Go"/>
+  <input id="dialog-btn-uplevel" style="display: none" value="Escalate Permission"/>
+  <input id="dialog-btn-close" style="display: none" value="Close"/>
+  <input id="dialog-time-before" style="display: none" value="Automatically close after "/>
+  <input id="dialog-time-after" style="display: none" value=" seconds"/>
+  <input id="dialog-support-url" style="display: none" value=""/>
+  <input id="dialog-support-email-title" style="display: none" value="Permission Escalation Application for Your Approval"/>
+  <input id="dialog-support-email-abstract" style="display: none" value="[Cause]%0d%0a
+Partner employees (IDs starting with WX, KF, or 8) and ODs (IDs starting with 300) have partner permissions on the enterprise technical support website by default. %0d%0a
+Some data on Info-Finder can only be accessed by users with the permission of Huawei engineers.%0d%0a
+Please approve this application so that partner employees can access such data.
+Thank you!%0d%0a
+%0d%0a
+[Applicant]%0d%0a
+Your name and ID"/>
+  <input id="dialog-support-email-to" style="display: none" value="Your Huawei supervisor's email or ID"/>
+  <input id="dialog-support-email-cc" style="display: none" value="e.support@huawei.com"/>
+  <input id="dialog-message-uat-getAccount" style="display: none" value=""/>
+  <input id="i18n_isLogin" style="display:none;" value="true"/>
+  <div id="headerTop">
+   <div class="headerTopLogo">
+    <div class="header-left">
+     <img alt="" src="/info-finder/pages/commonFile/img/logo_new1.png"/>
+    </div>
+   </div>
+   <div class="headerTop">
+    <div class="header-right">
+     <a class="Tech_support" href="https://support.huawei.com/enterprise/en/index.html" rel="noopener noreferrer" target="_blank">
+      Technical Support
+     </a>
+     <span class="login-line">
+     </span>
+     <a class="notification" href="https://support.huawei.com/enterprise/en/bulletins-service/ENEWS2000015594" id="notify" rel="noopener noreferrer" style="display: block;" target="_blank">
+      Announcements
+     </a>
+     <span class="login-line notification" id="notifysUrl" style="display: block;">
+     </span>
+     <span class="lang">
+      <em class="lang-select" onclick="showlangSelect(event,this)">
+       <em class="lang-name">
+        English
+       </em>
+       <i class="select-down">
+       </i>
+      </em>
+      <ul class="lang-val lang-val-en" style="display: none;">
+       <li class="new-change-lang" id="new-change-zh" lang="zh">
+        中文
+       </li>
+       <li class="new-change-lang" id="new-change-en" lang="en">
+        English
+       </li>
+      </ul>
+     </span>
+     <span class="login-line">
+     </span>
+     <span class="login-logout">
+      <a href="" id="login">
+       <span id="ehead_login">
+        Login
+       </span>
+      </a>
+      <i class="notice">
+       <div class="dialogTip" id="hover-userLevel-tip" style="">
+        <div class="title">
+         <i class="warning">
+         </i>
+         Tips
+        </div>
+        <div class="content">
+         Log in to obtain more information.
+        </div>
+        <div class="foot noTime">
+         <div class="btn-group">
+          <a class="sure-btn common-btn">
+           Login
+          </a>
+          <a class="cancel-btn common-btn">
+           Close
+          </a>
+         </div>
+        </div>
+       </div>
+      </i>
+     </span>
+     <div class="dialogTip" id="change-userLevel-tip" style="right: -20px; visibility: hidden; opacity: 0;">
+      <div class="title">
+       <i class="warning">
+       </i>
+       Tips
+      </div>
+      <div class="content enContent">
+       Log in to obtain more information.
+      </div>
+      <div class="foot enFoot">
+       <div class="time">
+        Automatically close after
+        <span>
+         0
+        </span>
+        seconds
+       </div>
+       <div class="btn-group">
+        <a class="sure-btn common-btn">
+         Login
+        </a>
+        <a class="cancel-btn common-btn">
+         Close
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="headerDIV">
+   <div id="headerPosition">
+    <div class="headerLogo-con">
+     <div class="header-logo">
+      <a href="/info-finder/en/enterprise/index">
+      </a>
+     </div>
+    </div>
+    <div class="header enterprise">
+     <div class="header-wrapper">
+      <div class="header-left" style="display: none">
+       <div>
+       </div>
+      </div>
+      <div class="header-con">
+       <div class="header-mid header_en header_enterprise">
+        <a class="nav openSearch" href="/info-finder/en/enterprise/index">
+         Home
+        </a>
+        <a class="nav search-center active" href="/info-finder/search-center/en/enterprise/index">
+         Search Center
+        </a>
+        <a class="nav encyclopedia" href="/info-finder/encyclopedia/en/index.html">
+         IP Encyclopedia
+        </a>
+        <a class="nav course" href="/info-finder/vue/#/en/enterprise/onlinecourses/list/hot" rel="noopener noreferrer">
+         Online Courses
+         <i>
+         </i>
+        </a>
+        <a class="nav bidding" href="/info-finder/recomproduct/en/index.html" rel="noopener noreferrer">
+         Intelligent Model Selection
+        </a>
+       </div>
+       <div class="iphone-btn">
+        <span>
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="iphone-nav">
+   <div class="ip-head">
+    <span>
+    </span>
+   </div>
+   <div class="ip-nav">
+    <a class="nav" href="/info-finder/en/enterprise/index">
+     Home
+    </a>
+    <a class="nav" href="/info-finder/search-center/en/enterprise/index">
+     Search Center
+    </a>
+    <a class="nav bidding" href="/info-finder/recomproduct/en/index.html" rel="noopener noreferrer">
+     Intelligent Model Selection
+    </a>
+    <a class="nav" href="/info-finder/encyclopedia/en/index.html">
+     IP Encyclopedia
+    </a>
+   </div>
+   <div class="ip-footer">
+    <em class="lang-select" onclick="showlangSelect(event,this)">
+     <span class="ip-chang-lang">
+     </span>
+     <i class="select-down">
+     </i>
+    </em>
+    <ul class="lang-val lang-val-en">
+     <li class="new-change-lang" id="ip-change-zh" lang="zh">
+      中文
+     </li>
+     <li class="new-change-lang" id="ip-change-en" lang="en">
+      English
+     </li>
+    </ul>
+    <span class="ip-right">
+     <span id="login-logout-mobile">
+      <a href="" id="login-mobile">
+       <span id="ehead-login-mobile">
+        Login
+       </span>
+      </a>
+     </span>
+    </span>
+   </div>
+  </div>
+  <div id="common-reLogin-pop">
+   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+   <meta content="IE=10" http-equiv="X-UA-Compatible"/>
+   <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport"/>
+   <link href="/info-finder/pages/commonFile/plugIn/popupWindow/popupwindow.css?v=1695205408806" rel="stylesheet"/>
+   <div class="common-dialog-box" style="display: none">
+    <div class="tips-dialog-box">
+     <div class="selectBox-head" style="font-size:16px">
+      <span class="selectBox-tips-icon">
+      </span>
+      <span class="selectBox-head-title">
+       Tips
+      </span>
+      <span class="selectBox-head-icon">
+      </span>
+     </div>
+     <div class="select-con">
+      <div class="tips-dialog-content">
+      </div>
+     </div>
+     <div class="tips-dialog-footer">
+      <span class="sure-btn">
+       Confirm
+      </span>
+      <span class="cancel-btn">
+       cancel
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="application/javascript">
+   var notifys=document.getElementById("notify");
+	var notifysUrl=document.getElementById("notifysUrl");
+	if (notifys){
+		if(notifys.getAttribute('href')){
+			notifys.style.display="block";
+			notifysUrl.style.display="block";
+		}else{
+			notifys.style.display="none";
+			notifysUrl.style.display="none";
+		}
+	}
+  </script>
+  <script defer="defer" src="/info-finder/pages/commonFile/plugIn/popupWindow/popupwindow.js?v=1695205408806">
+  </script>
+  <script defer="defer" src="/info-finder/pages/commonFile/js/commonUtils.js?v=1695205408806">
+  </script>
+  <script defer="defer" src="/info-finder/pages/commonFile/plugIn/dialogTip/dialogTip.js?v=1695205408806">
+  </script>
+  <div class="layout-breadcrumb">
+   <div class="cistern clearfix">
+    <ul>
+     <li>
+      <a class="alltools" href="/info-finder/search-center/en/enterprise/index.html?allTools">
+       All Tools
+      </a>
+     </li>
+     <li>
+      <a class="toEnterprise">
+       Lifecycle Query
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="eoxUXTools">
+   <div class="info-cat-nameabc">
+    <div class="toolNameClass">
+     <span class="infoIcon">
+     </span>
+     <span class="toolName">
+      Lifecycle Query
+     </span>
+    </div>
+    <div class="spec-nav">
+     <ul>
+      <li class="tab-item" id="specProduct-nav" type="hStatus">
+       <a>
+        Query by product
+       </a>
+       <em>
+       </em>
+      </li>
+      <li class="tab-item active" id="specVersion-nav" type="sStatus">
+       <a>
+        Query by software version
+       </a>
+       <em>
+       </em>
+      </li>
+     </ul>
+    </div>
+    <div class="specEoxPage" id="spec-container">
+     <div class="spec-con specProduct-nav selected" style="display: none;">
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+      <meta content="IE=10" http-equiv="X-UA-Compatible"/>
+      <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport"/>
+      <link href="/info-finder/pages/commonFile/plugIn/multiDropDownBox/multidDropdownBox.css?v=1695205408806" rel="stylesheet"/>
+      <link href="/info-finder/pages/QuickQuery/tools/css/specProductUX.css?v=1695205408806" rel="stylesheet"/>
+      <input id="auto_before" type="hidden" value="No results found for"/>
+      <input id="auto_after" type="hidden" value="Enter a correct product series name or product model, such as S12700 or NE40E-X16."/>
+      <input id="search_keys" type="hidden" value="Keywords:"/>
+      <input id="search_placeholder" type="hidden" value="Enter a product keyword"/>
+      <input id="search_btn" type="hidden" value="Query"/>
+      <input id="multiBox-family" type="hidden" value="Product Family"/>
+      <input id="multiBox-series" type="hidden" value="Series"/>
+      <input id="multiBox-subSeries" type="hidden" value="Product SubSeries"/>
+      <input id="multiBox-model" type="hidden" value="Model"/>
+      <div class="multiGroup-dropdown product_status" id="multiDropdownGroup_eoxProduct">
+       <div class="info-cat-select" id="common-product-select-eoxProduct">
+        <span>
+         Product:
+        </span>
+        <div class="select-con">
+         <div class="select-group" id="model-select-eoxProduct">
+          <input class="select-input" placeholder="Enter directly or click the arrow on the right"/>
+          <em class="clearBtn modelSelectClearBtn">
+          </em>
+          <i>
+          </i>
+          <div class="multiDropdown-dialog" style="display: none">
+           <div class="selectBox-con">
+           </div>
+           <div class="selectBox-footer">
+            <a class="selectBox-confirm btn-confirm disabled">
+             Confirm
+            </a>
+           </div>
+          </div>
+          <ul class="multiDropdown-list select-down" style="display: none">
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="info-cat-select" id="common-key-select-eoxProduct">
+        <span>
+         Keywords:
+        </span>
+        <div class="select-con">
+         <div class="select-group" id="keyword-select-eoxProduct">
+          <input class="select-input" placeholder="Enter a product keyword"/>
+          <i class="search">
+          </i>
+         </div>
+        </div>
+       </div>
+       <div class="info-cat-select" id="productStatu-select-eoxProduct">
+        <span>
+         Display:
+        </span>
+        <div class="select-module2">
+         <dl>
+          <dd>
+           <div class="input-select2 new-click-class">
+            <input class="modelproInput" id="eoxProductStatusType" name="country" placeholder="Select life cycle status" readonly="" type="text"/>
+            <i class="iconfont icon-down">
+            </i>
+            <ul class="" style="display: none;">
+             <li class="allSelect" value="all">
+              All
+             </li>
+             <li class="EOMSelect" value="eom">
+              End of Marketing (EOM)
+             </li>
+             <li class="EOSSelect" value="eos">
+              End of Service (EOS)
+             </li>
+             <li class="EOSFSelect" style="" value="eofs">
+              End of Full Support (EOFS)
+             </li>
+            </ul>
+           </div>
+          </dd>
+         </dl>
+         <div class="date-box clearfix">
+          <div class="date-input start-date">
+           <input class="start-calendar" disabled="true" name="from" placeholder="From" readonly="readonly" type="text"/>
+           <em class="icon_calendar">
+           </em>
+          </div>
+          <div class="date-input end-date">
+           <input class="end-calendar" disabled="true" name="to" placeholder="To" readonly="readonly" type="text"/>
+           <em class="icon_calendar">
+           </em>
+          </div>
+         </div>
+        </div>
+        <div class="select-con select-product-search">
+         <a class="search-btn" id="productSearch-btn">
+          Query
+         </a>
+        </div>
+        <div class="eoxSet eox-pc-set">
+         <a class="eoxProductReset" href="javascript:void(0);">
+          <span>
+           <img class="resetFilter" src="/info-finder/pages/QuickQuery/tools/img/resetFilter.png"/>
+          </span>
+          <span>
+           Reset filter(s)
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div id="excelDiv" style="display: none">
+      </div>
+      <script charset="utf-8" src="/info-finder/pages/QuickQuery/tools/js/specProduct.js?v=1695205408806" type="text/javascript">
+      </script>
+     </div>
+     <div class="spec-con specVersion-nav" style="">
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+      <meta content="IE=10" http-equiv="X-UA-Compatible"/>
+      <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport"/>
+      <link href="/info-finder/pages/commonFile/plugIn/multiDropDownBox/multidDropdownBox.css?v=1695205408806" rel="stylesheet"/>
+      <link href="/info-finder/pages/QuickQuery/tools/css/specVersionUX.css?v=1695205408806" rel="stylesheet"/>
+      <input id="auto_before" type="hidden" value="No results found for"/>
+      <input id="auto_after" type="hidden" value="Enter a correct product series name or product model, such as S12700 or NE40E-X16."/>
+      <input id="search_keys" type="hidden" value="Keywords:"/>
+      <input id="search_placeholder" type="hidden" value="Enter a product keyword"/>
+      <input id="search_btn" type="hidden" value="Query"/>
+      <input id="multiBox-family" type="hidden" value="Product Family"/>
+      <input id="multiBox-series" type="hidden" value="Series"/>
+      <input id="multiBox-subSeries" type="hidden" value="Product SubSeries"/>
+      <input id="multiBox-model" type="hidden" value="Model"/>
+      <input id="select-allVersion" type="hidden" value="All Version"/>
+      <div class="multiGroup-dropdown version_status" id="multiDropdownGroup_eoxVersion">
+       <div class="info-cat-select" id="common-product-select-eoxVersion">
+        <span>
+         Product:
+        </span>
+        <div class="select-con">
+         <div class="select-group" id="model-select-eoxVersion">
+          <input categoryname="Switches" class="select-input" isleaf="Y" level="model" model="CloudEngine S6730S-S24X6Q-A" pbiid="250538978" pc2="Switches" pc3="Campus Switch" placeholder="Enter directly or click the arrow on the right" series="S6700" style="" subseries="S6730S-S"/>
+          <em class="clearBtn modelSelectClearBtn" style="display: inline;">
+          </em>
+          <i>
+          </i>
+          <div class="multiDropdown-dialog" style="display: none;">
+           <div class="selectBox-con">
+            <div class="select-box" key="pc3">
+             <span>
+              Product Family
+             </span>
+             <ul class="selectBox-family">
+              <li categoryname="Switches" class="tabLi active hasData" li-index="0">
+               <a childtype="pc2" class="selectBox-tab" leafid="1482605678974">
+                Switches
+                <em>
+                </em>
+               </a>
+               <ul class="selectBox-pc3" style="display: block;">
+                <li childtype="pc3" class="select-li checked" isleaf="N" leafid="1482605727712" style="">
+                 <span>
+                  Campus Switch
+                 </span>
+                </li>
+                <li childtype="pc3" class="select-li" isleaf="N" leafid="1482605755026">
+                 <span>
+                  Data Center Switch
+                 </span>
+                </li>
+               </ul>
+              </li>
+              <li categoryname="Routers" class="tabLi" li-index="1">
+               <a childtype="pc2" class="selectBox-tab" leafid="1482607112869">
+                Routers
+                <em>
+                </em>
+               </a>
+               <ul class="selectBox-pc3">
+               </ul>
+              </li>
+              <li categoryname="Security" class="tabLi" li-index="2">
+               <a childtype="pc2" class="selectBox-tab" leafid="1482616267089">
+                Security
+                <em>
+                </em>
+               </a>
+               <ul class="selectBox-pc3">
+               </ul>
+              </li>
+              <li categoryname="WLAN" class="tabLi" li-index="3">
+               <a childtype="pc2" class="selectBox-tab" leafid="1482616818654">
+                WLAN
+                <em>
+                </em>
+               </a>
+               <ul class="selectBox-pc3">
+               </ul>
+              </li>
+             </ul>
+            </div>
+            <div class="select-box common-box" key="series">
+             <span>
+              Series
+             </span>
+             <ul class="selectBox-series">
+              <li childtype="series" class="select-li" isleaf="N" leafid="7070015">
+               <span>
+                S9700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="251529280">
+               <span>
+                S8700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="6805481">
+               <span>
+                S7700
+               </span>
+              </li>
+              <li childtype="series" class="select-li checked" isleaf="N" leafid="6691593" style="">
+               <span>
+                S6700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="21962538">
+               <span>
+                S600-E
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="6691579">
+               <span>
+                S5700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="253018231">
+               <span>
+                S500&amp;300&amp;200
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="6691596">
+               <span>
+                S3700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="6691602">
+               <span>
+                S2700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="6635912">
+               <span>
+                S1700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="257363121">
+               <span>
+                S16700
+               </span>
+              </li>
+              <li childtype="series" class="select-li" isleaf="N" leafid="20985028">
+               <span>
+                S12700
+               </span>
+              </li>
+             </ul>
+            </div>
+            <div class="select-box common-box" key="subSeries">
+             <span>
+              Product SubSeries
+             </span>
+             <ul class="selectBox-subSeries">
+              <li childtype="subSeries" class="select-li checked" isleaf="N" leafid="C00000000035">
+               <span style="">
+                S6730S-S
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000012">
+               <span>
+                S6730S-H
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000006">
+               <span>
+                S6730-S
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000016">
+               <span>
+                S6730-H
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000050">
+               <span>
+                S6720S-SI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000043">
+               <span>
+                S6720S-LI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000024">
+               <span>
+                S6720S-EI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000019">
+               <span>
+                S6720-SI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000029">
+               <span>
+                S6720-LI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000051">
+               <span>
+                S6720-HI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000011">
+               <span>
+                S6720-EI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="N" leafid="C00000000013">
+               <span>
+                S6700-EI
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="Y" leafid="254209303">
+               <span>
+                CloudEngine S6735-S
+               </span>
+              </li>
+              <li childtype="subSeries" class="select-li" isleaf="Y" leafid="253349373">
+               <span>
+                CloudEngine S6730-H-V2
+               </span>
+              </li>
+             </ul>
+            </div>
+            <div class="select-box common-box" key="model">
+             <span>
+              Model
+             </span>
+             <ul class="selectBox-model">
+              <li childtype="model" class="select-li checked" isleaf="Y" leafid="250538978" style="">
+               <span>
+                CloudEngine S6730S-S24X6Q-A
+               </span>
+              </li>
+             </ul>
+            </div>
+           </div>
+           <div class="selectBox-footer">
+            <a class="selectBox-confirm btn-confirm" style="">
+             Confirm
+            </a>
+           </div>
+          </div>
+          <ul class="multiDropdown-list select-down" style="display: none">
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="info-cat-select" id="version-group-eoxVersion">
+        <span>
+         Version:
+        </span>
+        <div class="select-con">
+         <div class="select-group" id="version-select-eoxVersion">
+          <input class="select-input" fullversion="all" placeholder="Please Select Version" readonly="" series="S6700" seriesid="6691593" versionpbiid="all" vid="all"/>
+          <i>
+          </i>
+          <ul class="select-down version-list" style="display: none">
+           <li fullversion="all" li-index="-1" series="S6700" seriesid="6691593" versionpbiid="all" vid="all">
+            All Version
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R022C10" li-index="0" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="258771233" vid="258771233">
+            V200R022C10
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R022C00" li-index="1" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="255262105" vid="255262105">
+            V200R022C00
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R022" li-index="2" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="255262103" vid="255262103">
+            V200R022
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R021C10" li-index="3" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="254549129" vid="254549129">
+            V200R021C10
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R021C00" li-index="4" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="253976789" vid="253976789">
+            V200R021C00
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R021" li-index="5" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="253976785" vid="253976785">
+            V200R021
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R020C10" li-index="6" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="253740229" vid="253740229">
+            V200R020C10
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R020C00" li-index="7" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="252172897" vid="252172897">
+            V200R020C00
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R020" li-index="8" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="252172895" vid="252172895">
+            V200R020
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R019C10" li-index="9" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="251278085" vid="251278085">
+            V200R019C10
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R019C00" li-index="10" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="250538984" vid="250538984">
+            V200R019C00
+           </li>
+           <li fullversion="CloudEngine S6730S-S24X6Q-A V200R019" li-index="11" series="S6700" seriesid="6691593" subseries="S6730S-S" subseriesid="C00000000035" versionpbiid="250538982" vid="250538982">
+            V200R019
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="info-cat-select" id="common-key-select-eoxVersion">
+        <span>
+         Keywords:
+        </span>
+        <div class="select-con">
+         <div class="select-group" id="keyword-select-eoxVersion">
+          <input class="select-input" placeholder="Enter a version keyword"/>
+          <i class="search">
+          </i>
+         </div>
+        </div>
+       </div>
+       <div class="info-cat-select" id="productStatu-select-eoxVersion">
+        <span>
+         Display:
+        </span>
+        <div class="select-module2">
+         <dl>
+          <dd>
+           <div class="input-select2 new-click-class">
+            <input class="modelproInput" id="eoxVersionStatusType" name="country" placeholder="Select life cycle status" readonly="" type="text"/>
+            <i class="iconfont icon-down">
+            </i>
+            <ul class="" style="display: none;">
+             <li class="allSelect" value="all">
+              All
+             </li>
+             <li class="EOMSelect" value="eom">
+              End of Marketing (EOM)
+             </li>
+             <li class="EOSSelect" value="eos">
+              End of Service (EOS)
+             </li>
+             <li class="EOSFSelect" style="" value="eofs">
+              End of Full Support (EOFS)
+             </li>
+            </ul>
+           </div>
+          </dd>
+         </dl>
+         <div class="date-box clearfix">
+          <div class="date-input start-date">
+           <input class="start-calendar" disabled="true" name="from" placeholder="From" readonly="readonly" type="text"/>
+           <em class="icon_calendar">
+           </em>
+          </div>
+          <div class="date-input end-date">
+           <input class="end-calendar" disabled="true" name="to" placeholder="To" readonly="readonly" type="text"/>
+           <em class="icon_calendar">
+           </em>
+          </div>
+         </div>
+        </div>
+        <div class="select-con select-version-search">
+         <a class="search-btn" id="versionSearch-btn" style="">
+          Query
+         </a>
+        </div>
+        <div class="eoxSet eox-pc-set">
+         <a class="eoxVersionReset" href="javascript:void(0);">
+          <span>
+           <img class="resetFilter" src="/info-finder/pages/QuickQuery/tools/img/resetFilter.png"/>
+          </span>
+          <span>
+           Reset filter(s)
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div id="excelDiv" style="display: none">
+      </div>
+      <script charset="utf-8" src="/info-finder/pages/QuickQuery/tools/js/specVersion.js?v=1695205408806" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <!-- 结果展示 -->
+    <div class="info-pic-default">
+     <div class="info-result-title">
+      <div class="info-result-title clearfix">
+       <div class="info-result-title-left" style="display: block;">
+        <p class="">
+         Note: For more life cycle information, see
+         <a class="toTech_support_note" href="https://support.huawei.com/enterprise/en/Switches/cloudengine-s6730s-s24x6q-a-pid-250538978/bulletins?type=life-cycle-notices" style="color:#2A5DB0;padding-right:10px;margin-top:4px;" target="_blank">
+          <span>
+           Life Cycle Notices
+          </span>
+          <em class="info-result-share">
+          </em>
+         </a>
+        </p>
+       </div>
+       <div class="infoMDownLoad-div" onclick="javascript:queryEoxDataDownLoad();">
+        <img src="/info-finder/pages/QuickQuery/tools/img/infom-download.png"/>
+        <span>
+         Export Data
+         <em class="lock" style="">
+         </em>
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="info-result-container-box box-soft-nHW-back box-soft-HW">
+      <div class="info-result-th">
+       <ul class="th-template">
+        <li class="modelName">
+         <div class="result-marketing">
+          <span class="leftBorderContent result-title">
+          </span>
+         </div>
+        </li>
+        <li class="eom">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+          </span>
+         </div>
+         <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+         </ul>
+        </li>
+        <li class="eofs">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+          </span>
+         </div>
+         <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+         </ul>
+        </li>
+        <li class="eos">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+          </span>
+         </div>
+         <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+         </ul>
+        </li>
+        <li class="eox">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+          </span>
+         </div>
+         <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="" style="display: flex;">
+        <li class="modelName isS_nHWE">
+         <div class="result-marketing">
+          <span class="leftBorderContent result-title">
+           Product Version
+          </span>
+         </div>
+        </li>
+        <li class="eom isS_nHWE">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+           End of Marketing (EOM)
+          </span>
+         </div>
+        </li>
+        <li class="eofs isS_nHWE">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+           End of Full Support (EOFS)
+          </span>
+         </div>
+        </li>
+        <li class="eos isS_nHWE">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+           End of Service (EOS)
+          </span>
+         </div>
+        </li>
+        <li class="eox isS_nHWE">
+         <div class="result-marketing">
+          <span class="leftBorderSpan">
+          </span>
+          <span class="result-marketing result-title leftBorderContent">
+           Life Cycle Status
+          </span>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div class="info-result-tr">
+       <ul class="tr-template">
+        <li class="mib_pModel">
+        </li>
+        <li class="pModel">
+        </li>
+        <li class="mib_eom">
+        </li>
+        <li class="mib_eomIntended">
+        </li>
+        <li class="eomIntended">
+        </li>
+        <li class="mib_eomFormal">
+        </li>
+        <li class="eomFormal">
+        </li>
+        <li class="mib_eofs">
+        </li>
+        <li class="mib_eofsIntended">
+        </li>
+        <li class="eofsIntended">
+        </li>
+        <li class="mib_eofsFormal">
+        </li>
+        <li class="eofsFormal">
+        </li>
+        <li class="mib_eos">
+        </li>
+        <li class="mib_eosIntended">
+        </li>
+        <li class="eosIntended">
+        </li>
+        <li class="mib_eosFormal">
+        </li>
+        <li class="eosFormal">
+        </li>
+        <li class="mib_eox">
+        </li>
+        <li class="mib_eoxIntended">
+        </li>
+        <li class="eoxIntended">
+        </li>
+        <li class="mib_eoxFormal">
+        </li>
+        <li class="eoxFormal">
+        </li>
+        <li class="info-querys-more">
+        </li>
+       </ul>
+       <ul class="">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R019
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2021-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2022-12-31
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOS
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="info-result-even">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R019C00
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2021-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2022-06-30
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2022-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOS
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R019C10
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2021-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2022-12-31
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOS
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="info-result-even">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R020
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2022-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOS
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R020C00
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2022-06-30
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2022-06-30
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2022-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOS
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="info-result-even">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R020C10
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2022-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOS
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R021
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2023-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2024-12-31
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2025-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         Before EOM
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="info-result-even">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R021C00
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2023-12-31
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2024-12-31
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2025-06-30
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         Before EOM
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R021C10
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         2023-06-30
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         2023-12-31
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         2023-12-31
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         EOM
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+       <ul class="info-result-even">
+        <li class="mib_pModel isS_nHWE">
+         Product Version
+        </li>
+        <li class="pModel isS_nHWE">
+         V200R022
+        </li>
+        <li class="mib_eom isS_nHWE">
+         End of Marketing (EOM)
+        </li>
+        <li class="eomIntended isS_nHWE">
+         Not announced
+        </li>
+        <li class="mib_eofs isS_nHWE">
+         End of Full Support (EOFS)
+        </li>
+        <li class="eofsIntended isS_nHWE">
+         Not announced
+        </li>
+        <li class="mib_eos isS_nHWE">
+         End of Service (EOS)
+        </li>
+        <li class="eosIntended isS_nHWE">
+         Not announced
+        </li>
+        <li class="mib_eox isS_nHWE">
+         Life Cycle Status
+        </li>
+        <li class="eoxIntended isS_nHWE">
+         Before EOM
+        </li>
+        <li class="info-querys-more isS_nHWE">
+        </li>
+       </ul>
+      </div>
+      <!--表格内容为空 提示语-->
+      <div class="license-infom-tool-data-without-tips" style="display: none;">
+       <p>
+        No data available
+       </p>
+      </div>
+     </div>
+     <!-- 分页 -->
+     <div class="pagination" id="reverse-page" style="display: block;">
+      <span class="com-span all-recordCount">
+       Total items :
+       <span name="recordCount">
+        12
+       </span>
+      </span>
+      <span class="select-pageSize com-span dataListCount en" name="selectPageSize" style="display: block;">
+       <span class="dataListCount" name="pageSize">
+        10
+       </span>
+       rows/page
+       <i class="arrow-img">
+       </i>
+       <ul style="display: none;">
+        <li>
+         <span>
+          2
+         </span>
+         rows/page
+        </li>
+        <li>
+         <span>
+          4
+         </span>
+         rows/page
+        </li>
+        <li>
+         <span>
+          10
+         </span>
+         rows/page
+        </li>
+        <li>
+         <span>
+          20
+         </span>
+         rows/page
+        </li>
+        <li>
+         <span>
+          30
+         </span>
+         rows/page
+        </li>
+       </ul>
+      </span>
+      <span class="com-span arrow prev dataListCount" name="prev" style="cursor: default; display: none;">
+      </span>
+      <span class="com-span nav dataListCount" name="nav" style="cursor: pointer; display: block;">
+       <a class="navi" style="">
+        <font style="color:#C7000b;font-weight: bold">
+         1
+        </font>
+       </a>
+       <a class="navi">
+        2
+       </a>
+      </span>
+      <span class="com-span arrow next dataListCount" name="next" style="cursor: pointer;">
+      </span>
+     </div>
+     <!-- note提示 -->
+     <div class="info-result-note">
+      <p>
+       Note:
+      </p>
+      <p>
+       1. This tool is used to query the EOM, EOFS, and EOS dates planned for a product or version.
+      </p>
+      <p>
+       2. Generally, Huawei releases a life cycle announcement six months prior to the planned EOM/EOFS/EOS date. EOM, EOFS, and EOS dates are displayed as Not announced if the planned EOM date is more than six months in the future.
+      </p>
+      <p>
+       3.EOM: End of Marketing   EOFS: End of Full Support    EOS: End of Service and Support. For details, see
+       <a href="https://support.huawei.com/enterprise/en/warranty-policy" style="color:blue;" target="_blank">
+        Life cycle announcement strategy
+       </a>
+       .
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- <div class="info-result-note"></div> -->
+  </div>
+  <div class="foot">
+   <div id="footerDIV">
+    <!--footer         Start-->
+    <style>
+     .editPageButtom:not(:last-child) > div { float: left; }
+    </style>
+    <div class="ebg-footer">
+     <div class="link-group">
+      <div class="cistern">
+       <div class="con">
+        <div class="right">
+         <div class="footer-share">
+          <!--<div class="app">
+            <span class="foot-code lazyload">
+                <label>Enterprise App</label><a href="http://enterprise.huawei.com/topic/2014APP/index.html" target="_blank" rel="nofollow"><img class="lazy" alt="Enterprise APP" src="" data-original="http://e-file.huawei.com/-/media/EBG/Images/common/about-ebg/EBGAPP-201404.png?h=81&amp;la=en&amp;w=81" /></a></span>
+        </div>-->
+          <div class="share-wrap">
+           <label>
+            Follow Us
+           </label>
+           <ul class="clearfix">
+            <li>
+             <a href="https://www.facebook.com/HuaweiEnterprise" rel="nofollow noopener noreferrer" target="_blank">
+              <em class="iconfont icon-f">
+              </em>
+             </a>
+            </li>
+            <li>
+             <a href="https://www.linkedin.com/company/huawei-enterprise" rel="nofollow noopener noreferrer" target="_blank">
+              <em class="iconfont icon-linkin">
+              </em>
+             </a>
+            </li>
+            <li>
+             <a href="https://twitter.com/#!/HuaweiEnt" rel="nofollow noopener noreferrer" target="_blank">
+              <em class="iconfont icon-t1">
+              </em>
+             </a>
+            </li>
+            <li>
+             <a href="https://www.youtube.com/user/HuaweiEnterprise" rel="nofollow noopener noreferrer" target="_blank">
+              <em class="iconfont icon-youtube3">
+              </em>
+             </a>
+            </li>
+            <li>
+             <a href="https://www.instagram.com/huaweient" rel="nofollow noopener noreferrer" target="_blank">
+              <em class="iconfont icon-instagram">
+              </em>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="left">
+         <div class="link-set" id="footers">
+          <ul class="clearfix">
+           <li>
+            <h6>
+             About Huawei
+            </h6>
+           </li>
+           <li>
+            <a data-id="{D409BBE2-CAFA-4238-BF6B-0404ACAAD5AE}" href="https://www.huawei.com/en/about-huawei" rel="nofollow noopener noreferrer" target="_blank">
+             About Huawei
+            </a>
+           </li>
+           <li>
+            <a data-id="{3885C101-CD3A-49E3-959C-89D964841AA2}" href="//e.huawei.com/en/about/huawei-enterprise" rel="nofollow">
+             About Huawei Enterprise
+            </a>
+           </li>
+           <li>
+            <a data-id="{C0579CEF-5A52-4762-8525-84F26F4F37E5}" href="//e.huawei.com/en/branch-office-query" rel="nofollow">
+             Branch Office
+            </a>
+           </li>
+           <li>
+            <a data-id="{76BB049C-B5C4-4A2F-84FC-9D25EF98A5C5}" href="//e.huawei.com/en/news" rel="nofollow">
+             News Room
+            </a>
+           </li>
+           <li>
+            <a data-id="{0970FECF-44A5-4626-B1E6-16F18E21B7C4}" href="//e.huawei.com/en/events" rel="nofollow">
+             Huawei Events
+            </a>
+           </li>
+           <li>
+            <a data-id="{E1E737D7-E752-41FC-ADC3-F12E557620E2}" href="https://www.huawei.com/en/facts" rel="nofollow noopener noreferrer" target="_blank">
+             Huawei Facts
+            </a>
+           </li>
+           <li>
+            <a data-id="{B03DD90E-7394-466D-8C50-2EE0BDF93AC7}" href="https://www.huawei.com/minisite/tech4all/en/tiger.html?ic_medium=hwdc&amp;ic_source=corp_sbanner_tech4all" rel="nofollow noopener noreferrer" target="_blank">
+             TECH4ALL
+            </a>
+           </li>
+          </ul>
+          <ul class="clearfix">
+           <li>
+            <h6>
+             How to Buy
+            </h6>
+           </li>
+           <li>
+            <a data-id="{8F5AE213-F748-4BD3-8477-CCBF67356D60}" href="//e.huawei.com/en/get-price-info" rel="nofollow">
+             Get Pricing
+            </a>
+           </li>
+           <li>
+            <a data-id="{9C0D0F1B-6BA9-4574-B7D0-FFE1DD71E5AE}" href="https://e.huawei.com/customercenter" rel="nofollow">
+             eDeal Ordering System
+            </a>
+           </li>
+           <li>
+            <a data-id="{26352090-7F82-4B4B-B26B-93ECD84C58E9}" href="https://partner.huawei.com/web/worldwide/channel-find-partner" rel="nofollow">
+             Find a Reseller
+            </a>
+           </li>
+          </ul>
+          <ul class="clearfix">
+           <li>
+            <h6>
+             Partner
+            </h6>
+           </li>
+           <li>
+            <a data-id="{5F504B63-B53D-4923-AADD-108E06E01320}" href="https://partner.huawei.com/en_US/web/worldwide" rel="nofollow">
+             Become a Partner
+            </a>
+           </li>
+           <li>
+            <a data-id="{E3058FFB-CD71-482E-9B53-AD9DE686B206}" href="https://support.huawei.com/learning/NavigationAction!createNavi?navId=TRAIN_PARTNER&amp;lang=en" rel="nofollow noopener noreferrer" target="_blank">
+             Partner Training
+            </a>
+           </li>
+           <li>
+            <a data-id="{4045B77F-BBB3-4936-9067-D60F51CB8183}" href="https://partner.huawei.com/web/worldwide/partner-policy" rel="nofollow">
+             Partner Policy
+            </a>
+           </li>
+           <li>
+            <a data-id="{A1344ABA-92C3-4616-A2DA-5EA11F9FD959}" href="https://e.huawei.com/en/partner/marketing" rel="nofollow noopener noreferrer">
+             Partner Marketing
+            </a>
+           </li>
+          </ul>
+          <ul class="clearfix">
+           <li>
+            <h6>
+             Resources
+            </h6>
+           </li>
+           <li>
+            <a data-id="{579B6081-E0CE-4F47-9983-84B22FE5D59E}" href="https://e.huawei.com/en/webinar" rel="noopener noreferrer" target="_blank">
+             Webinar
+            </a>
+           </li>
+           <li>
+            <a data-id="{E8E3CF1F-8EA7-4F59-8B80-407A653ECB18}" href="//e.huawei.com/en/eblog">
+             eBlog
+            </a>
+           </li>
+           <li>
+            <a data-id="{657D2F16-B683-4833-9245-84DFE3F4394A}" href="//e.huawei.com/en/material/MaterialList">
+             Resource Center
+            </a>
+           </li>
+           <li>
+            <a data-id="{5DFDAEC7-6BB6-4A32-B598-4C43BFAD8225}" href="//e.huawei.com/en/videolist">
+             Video Library
+            </a>
+           </li>
+           <li>
+            <a data-id="{F5E084B6-41E6-4A02-AF33-C60F72C29D80}" href="//e.huawei.com/en/publications">
+             Publications
+            </a>
+           </li>
+           <li>
+            <a data-id="{2D58EE6B-2147-49A6-982D-6230A7E1989F}" href="//e.huawei.com/en/customer-success-stories">
+             Case Studies
+            </a>
+           </li>
+           <li>
+            <a data-id="{F9E02543-2FE1-40FF-99D3-D4920CFA91EA}" href="https://e.huawei.com/en/publications/global/ict-new-horizons-podcasts">
+             ICT Insights Podcast
+            </a>
+           </li>
+          </ul>
+          <ul class="clearfix">
+           <li>
+            <h6>
+             Others
+            </h6>
+           </li>
+           <li>
+            <a data-id="{FF22C3F6-B724-4A18-BC29-FA3E508CF62E}" href="https://forum.huawei.com/enterprise/en/index.html" rel="noopener noreferrer" target="_blank">
+             Support Community
+            </a>
+           </li>
+           <li>
+            <a data-id="{844918F5-26B4-43DC-8A3D-89638675957E}" href="https://intl.huaweicloud.com" rel="nofollow noopener noreferrer" target="_blank">
+             HUAWEI CLOUD
+            </a>
+           </li>
+           <li>
+            <a data-id="{E22E3FFC-FFB0-439D-B644-6110C9FB9ED3}" href="https://solar.huawei.com/eu" rel="nofollow noopener noreferrer" target="_blank">
+             FusionSolar Smart PV
+            </a>
+           </li>
+          </ul>
+          <dl class="wap-app">
+           <dt>
+            <h6>
+             Enterpise App
+             <span class="iconfont icon-right">
+             </span>
+            </h6>
+           </dt>
+           <dd>
+            <a class="lazyload" href="javascript:;">
+             <img alt="appGallery" class="J-ebg-replace-img-lazyload" data-ipad-h="" data-ipad-v="" data-original="https://support.huawei.com/enterpriseindex/layout/v4/img/appGallery.png" data-pc-l="https://support.huawei.com/enterpriseindex/layout/v4/img/appGallery.png" data-pc-s="" data-wap="" src=""/>
+            </a>
+           </dd>
+           <dd>
+            <a class="lazyload" href="https://apps.apple.com/cn/app/hua-wei-qi-ye-ye-wu/id840052145" rel="nofollow">
+             <img alt="app-store" class="J-ebg-replace-img-lazyload" data-ipad-h="" data-ipad-v="" data-original="https://support.huawei.com/enterpriseindex/layout/v4/img/app-store.png" data-pc-l="https://support.huawei.com/enterpriseindex/layout/v4/img/app-store.png" data-pc-s="" data-wap="" src=""/>
+            </a>
+           </dd>
+           <dd>
+            <a class="lazyload" href="https://play.google.com/store/apps/details?id=com.huawei.hwebgappstorepad" rel="nofollow">
+             <img alt="Google-Play" class="J-ebg-replace-img-lazyload" data-ipad-h="" data-ipad-v="" data-original="https://support.huawei.com/enterpriseindex/layout/v4/img/google-play.png" data-pc-l="https://support.huawei.com/enterpriseindex/layout/v4/img/google-play.png" data-pc-s="" data-wap="" src=""/>
+            </a>
+           </dd>
+          </dl>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="copyright">
+      <div class="cistern">
+       <div class="con clearfix">
+        <p>
+         <span id="bottom_1_tCopyRight">
+          Copyright © 2022 Huawei Technologies Co., Ltd. All rights reserved.
+         </span>
+        </p>
+        <ul>
+         <li>
+          <a class="lazyload-v2" href="https://support.huawei.com/enterprise/en/privacy-policy" id="foot-info-privacy" rel="nofollow noopener noreferrer" style="position: relative;" target="_blank">
+           Privacy
+           <img data-original="https://support.huawei.com/enterpriseindex/layout/v4/img/new_lb.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" style="position:absolute;top:-8px;left: 35px;width: 24px;height:13px;"/>
+          </a>
+         </li>
+         <span>
+          |
+         </span>
+         <li>
+          <a href="https://www.huawei.com/en/legal" rel="nofollow noopener noreferrer" target="_blank">
+           Terms of use
+          </a>
+         </li>
+         <span>
+          |
+         </span>
+         <li>
+          <a href="//e.huawei.com/en/rss" rel="nofollow">
+           RSS Subscribe
+          </a>
+         </li>
+         <span>
+          |
+         </span>
+         <li>
+          <a href="https://support.huawei.com/enterprise/en/sitemap.html">
+           Sitemap
+          </a>
+         </li>
+         <span>
+          |
+         </span>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--设置个性化脚本-->
+    <script type="text/javascript">
+     var digitalData = JSON.parse('{"attributes":[{"category":"User Journey","name":"Buyer Cycle","score":"1","min":"1","max":"100"}]}');
+    </script>
+    <!-- footer        END-->
+   </div>
+  </div>
+  <link async="" href="/info-finder/pages/commonFile/css/share-feed.css?v=1695205408806" rel="stylesheet"/>
+  <div id="survey_feedback" style="display:none;">
+  </div>
+  <div class="right-layer en" id="feedDiv">
+   <ul class="right-con">
+    <li class="right_item surVey" data-v-38c32d27="" style="display: none;">
+     <a class="text" data-v-38c32d27="">
+      Survey
+     </a>
+     <div class="svg-icon right_icon" style="background-image: url(/info-finder/pages/commonFile/commonIcon/ic_public_emoji.svg)">
+     </div>
+    </li>
+    <li class="right_item help" data-v-38c32d27="" style="display: none;">
+     <a class="text" data-v-38c32d27="">
+      Help
+     </a>
+     <div class="svg-icon right_icon" style="background-image: url(/info-finder/pages/commonFile/commonIcon/ic_indication_help_lined.svg)">
+     </div>
+    </li>
+    <li class="right_item" data-v-38c32d27="">
+     <a class="text" href="https://support.huawei.com/iknow/?source=SupportE" target="_blank">
+      Service
+     </a>
+     <div class="svg-icon right_icon" style="background-image: url(/info-finder/pages/commonFile/commonIcon/ic_headphones_mic_lined.svg)">
+     </div>
+    </li>
+    <li class="right_item share_btn" data-v-38c32d27="">
+     <a class="text" data-v-38c32d27="">
+      Share
+     </a>
+     <div class="svg-icon right_icon" style="background-image: url(/info-finder/pages/commonFile/commonIcon/ic_share_lined.svg)">
+     </div>
+    </li>
+    <li class="right_item" data-v-38c32d27="" id="feedback">
+     <a class="text" data-v-38c32d27="">
+      Feed-back
+     </a>
+     <div class="svg-icon right_icon" style="background-image: url(/info-finder/pages/commonFile/commonIcon/ic_feedback_lined.svg)">
+     </div>
+    </li>
+   </ul>
+   <div class="share" data-v-38c32d27="">
+    <span data-v-38c32d27="">
+     Share link to
+    </span>
+    <ul data-v-38c32d27="">
+     <li class="inHerf">
+      <div class="svg-icon right_icon" style="background-image: url(/info-finder/pages/commonFile/commonIcon/share_in.svg)">
+      </div>
+     </li>
+     <li class="emailHerf">
+      <a class="svg-icon right_icon" rel="noopener noreferrer" style="background-image: url(/info-finder/pages/commonFile/commonIcon/ic_envelope_lined.svg)" target="_blank" title="Info-Finder: The New Way to Find Information - Huawei" value="Huawei Info-Finder offers a more convenient and efficient information experience, including info search, IP encyclopedia, and intelligent Q%26A. Try it here:">
+      </a>
+     </li>
+     <li class="sina">
+      <a class="svg-icon right_icon" rel="noopener noreferrer" style="background-image: url(/info-finder/pages/commonFile/commonIcon/share_weibo.svg)" target="_blank" value="https://service.weibo.com/share/share.php?url&amp;type=3&amp;count=1&amp;appkey=&amp;title=Info-Finder: The New Way to Find Information - Huawei%0d%0a
+https://info.support.huawei.com/network/info-finder/enterprise/en/index.html">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- 移动端-意见反馈悬浮框  -->
+   <div class="more-contacts" style="display: none">
+    <div class="ebg-btn-box J-contact-us">
+     <a class="ebg-btn-bg-red-l ebg-common-event" data-clickname="contact_us" data-clicktype="enter" data-eventact="enter" data-eventcat="contact_us" data-eventlbl="contact us" data-eventval="" href="javascript:;" id="feedback2">
+      <span>
+       Feedback
+      </span>
+      <em class="info-contacts">
+      </em>
+     </a>
+    </div>
+   </div>
+  </div>
+  <link async="" href="/info-finder/pages/QuickQuery/common/css/cookieStatement.css" rel="stylesheet" type="text/css"/>
+  <!-- JSåºå -->
+  <script type="text/javascript">
+   window.addEventListener('load', function(event) {
+            // å è½½uemçä»£ç 
+            // ç¤ºä¾:
+            const sc1=loadJs($('#common-chang-path').val()+'/pages/QuickQuery/common/js/cookieStatement.js')
+            const sc2=loadJs($('#common-chang-path').val()+'/pages/QuickQuery/common/js/cookieStatementTool.js')
+            const ops = {"language" : "en", "version" : "2"};
+            sc1.onload=function(){
+                sc2.onload=function(){
+                    const cookieStatement = new CookieStatementTool (ops);
+                    // cookie ç­¾ç½²
+                    if(!$('#modelNum').val()&&$('#lang').val()!='zh'){
+                        cookieStatement.init();
+                    }
+                }
+            }
+        });
+        function loadJs(url){
+            const script = document.createElement('script');
+            script.src = url;
+            script.async = true;
+            document.getElementsByTagName('body')[0].appendChild(script);
+            return script;
+        }
+  </script>
+  <script type="text/javascript">
+   var sui = sui || {};
+	sui.search = sui.search || {};
+	sui.cbb = sui.cbb || {};
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/tools/js/string-patch.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/tools/js/highLightUtil.js" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/commonFile/js/infoHead.js?v=1695205408806">
+  </script>
+  <script defer="defer" src="/info-finder/pages/commonFile/js/infoFinderFeedback.js">
+  </script>
+  <script defer="defer" src="/info-finder/pages/commonFile/js/newFeedBack.js">
+  </script>
+  <script src="/info-finder/pages/commonFile/js/openSource.js">
+  </script>
+  <script src="/info-finder/pages/commonFile/js/share-feed.js?v=1695205408806">
+  </script>
+  <script src="/info-finder/pages/commonFile/js/share.js?v=1695205408806">
+  </script>
+  <script src="/info-finder/pages/OpenSearch/openSearchJsp/common/js/SearchPlugin.js?v=1695205408806">
+  </script>
+  <script src="/info-finder/pages/commonFile/plugIn/searchProducts/searchProducts.js?v=1695205408806" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/QuickQuery/tools/common/commonUrl.js?v=1695205408806" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/commonFile/js/commonUem.js?v=1695205408806" type="text/javascript">
+  </script>
+  <!--  CBB插件 -->
+  <script src="/info-finder/pages/commonFile/plugIn/nicescroll/jquery.nicescroll.min.js" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/QuickQuery/common/js/loadingUI.js" type="text/javascript">
+  </script>
+  <div id="loadUILayer" style="position: fixed; inset: 0px; background: rgba(255, 255, 255, 0); z-index: 99999; display: none;">
+   <img src="/info-finder/pages/QuickQuery/common/img/loading1.gif" style="margin: auto; position: absolute; inset: 0px; width: 40px; height: 40px;"/>
+  </div>
+  <script src="/info-finder/pages/commonFile/plugIn/filter/filter.js?v=1695205408806" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/commonFile/plugIn/pagination/pagination.js?v=1695205408806" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/tools/js/infoEox_UX.js?v=1695205408806" type="text/javascript">
+  </script>
+  <!-- 时间控件 -->
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/common/js/datePicker/cal.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/common/js/datePicker/dateFormat.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/common/js/datePicker/calendar.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/info-finder/pages/QuickQuery/common/js/datePicker/res/datepicker_en.js" type="text/javascript">
+  </script>
+  <script src="/info-finder/pages/QuickQuery/tools/js/uem_product.js" type="text/javascript">
+  </script>
+  <script>
+   (function() {	
+	var csrftoken = {header:"X-CSRF-TOKEN", param:"_csrf", token:"1AB24DD9C9A2F6749A43BB0C2B45CF2C3B7BCFF1D0640D8C"};
+	var domains = ["info.support.huawei.com"];
+	var forms = document.getElementsByTagName('form');
+    
+	if(!(isSameLocaleDomain(domains)))
+	{
+		return;
+	}
+	
+	for (i = 0; i < forms.length; i++) {
+		var url = forms[i].action;
+		if (url == null || url == "")
+			continue;
+		if(!isSameDomain(url,domains))
+			continue;
+		if (forms[i].method.toLowerCase() != "post")
+			continue;
+		
+		// check if has csrf token element
+		var formchilds = forms[i].getElementsByTagName("input");
+		var hastoken = false;
+		if (formchilds != null && formchilds.length > 0) {
+			for ( var k = 0; k < formchilds.length; k++) {
+				if (formchilds[k].name == csrftoken.param) {
+					hastoken = true;
+					break;
+				}
+			}
+		}
+		if (hastoken) {
+			continue;
+		}
+		
+		// add csrf token element
+		var e = document.createElement("input");
+		e.name = csrftoken.param;
+		e.value = csrftoken.token;
+		e.type = "hidden";
+		forms[i].appendChild(e);
+	}	
+	
+	if(navigator.appName == "Microsoft Internet Explorer") {
+		hijackExplorer();
+	} else {
+		hijackStandard();
+	}	
+	// Overwrite the onsend function
+	XMLHttpRequest.prototype.onsend = function(info) {
+		if(isSameDomain(this.url,domains)) {
+			this.setRequestHeader("X-Requested-With", "XMLHttpRequest")
+			this.setRequestHeader(csrftoken.header, csrftoken.token);				
+		}
+	};
+	
+	// hook using standards based prototype
+	function hijackStandard() {
+		XMLHttpRequest.prototype._openFun = XMLHttpRequest.prototype.open;
+		XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+			this.url = url;			
+			this._openFun.apply(this, arguments);
+		};
+		
+		XMLHttpRequest.prototype._sendFun = XMLHttpRequest.prototype.send;
+		XMLHttpRequest.prototype.send = function(info) {
+			if(this.onsend != null) {
+				this.onsend.apply(this, arguments);
+			}					
+			this._sendFun.apply(this, arguments);
+		};		
+	}
+
+	// ie does not properly support prototype - wrap completely
+	function hijackExplorer() {
+		var _XMLHttpReq = window.XMLHttpRequest;
+		
+		function _allocXMLHttpRequest() {
+			this.base = _XMLHttpReq ? new _XMLHttpReq : new window.ActiveXObject("Microsoft.XMLHTTP");
+		}
+		
+		function _initXMLHttpRequest() {
+			return new _allocXMLHttpRequest;
+		}
+		
+		_initXMLHttpRequest.prototype = _allocXMLHttpRequest.prototype;
+		
+		// constants
+		_initXMLHttpRequest.UNSENT = 0;
+		_initXMLHttpRequest.OPENED = 1;
+		_initXMLHttpRequest.HEADERS_RECEIVED = 2;
+		_initXMLHttpRequest.LOADING = 3;
+		_initXMLHttpRequest.DONE = 4;
+		
+		// properties
+		_initXMLHttpRequest.prototype.status = 0;
+		_initXMLHttpRequest.prototype.statusText = "";
+		_initXMLHttpRequest.prototype.readyState = _initXMLHttpRequest.UNSENT;
+		_initXMLHttpRequest.prototype.responseText = "";
+		_initXMLHttpRequest.prototype.responseXML = null;
+		_initXMLHttpRequest.prototype.onsend = null;
+		
+		_initXMLHttpRequest.url = null;
+		_initXMLHttpRequest.onreadystatechange = null;
+
+		// methods
+		_initXMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+			var _self = this;
+			this.url = url;
+			
+			this.base.onreadystatechange = function() {
+				try { _self.status = _self.base.status; } catch (e) { }
+				try { _self.statusText = _self.base.statusText; } catch (e) { }
+				try { _self.readyState = _self.base.readyState; } catch (e) { }
+				try { _self.responseText = _self.base.responseText; } catch(e) { }
+				try { _self.responseXML = _self.base.responseXML; } catch(e) { }
+				
+				if(_self.onreadystatechange != null) {
+					_self.onreadystatechange.apply(this, arguments);
+				}
+				
+				if(_self.onload != null && _self.readyState == 4){
+					_self.onload.apply(this);	
+				}else if(_self.onerror != null && _self.readyState == 4){					
+					_self.onerror.apply(this);	
+				}
+			}
+			
+			this.base.open(method, url, async, user, pass);
+		};
+		
+		_initXMLHttpRequest.prototype.send = function(info) {
+			if(this.onsend != null) {
+				this.onsend.apply(this, arguments);
+			}
+			
+			this.base.send(info);
+		};
+		
+		_initXMLHttpRequest.prototype.abort = function() {
+			this.base.abort();
+		};
+		
+		_initXMLHttpRequest.prototype.getAllResponseHeaders = function() {
+			return this.base.getAllResponseHeaders();
+		};
+		
+		_initXMLHttpRequest.prototype.getResponseHeader = function(name) {
+			return this.base.getResponseHeader(name);
+		};
+		
+		_initXMLHttpRequest.prototype.setRequestHeader = function(name, value) {
+			return this.base.setRequestHeader(name, value);
+		};
+		
+		// hook
+		window.XMLHttpRequest = _initXMLHttpRequest;
+	}
+	
+	function isSameLocaleDomain(domains){
+		var samedomain = false;
+		var localeDomain = document.domain;
+		if(location.port != "" && location.port != 80 && location.port != 443)
+		{
+		    localeDomain = localeDomain + ":" + location.port;
+		}
+		for ( var j = 0; j < domains.length; j++) {
+			if (domains[j] == localeDomain) {
+				samedomain = true;				
+			}
+		}	
+		return samedomain;
+	}
+	
+	function isSameDomain( url, domains){
+		var samedomain = false;
+		// check domain
+		var dm = parseDomain(url);
+		var dmTmp = dm;
+		if(dm != null && dmTmp.indexOf(":") > 0)
+		{
+			var dmArray = dm.split(":");
+			if(dmArray[1] == "80" || dmArray[1] == "443")
+			{
+				dmTmp = dmArray[0];	
+			}
+		}
+		
+		if (dmTmp != null) {
+
+			for ( var j = 0; j < domains.length; j++) {
+				if (domains[j] == dmTmp) {
+					samedomain = true;				
+				}
+			}		
+		}else
+			samedomain = true;
+			
+		return samedomain;
+	}
+
+	function parseDomain(url) {
+		var pt = /(?:\w+):\/\/([\w.]+(:\d+)?)\//;
+
+		var results = url.match(pt);
+		if (results != null) {
+			return results[1];
+		}
+		return null;
+	}	
+})();
+  </script>
+  <script async="" src="/info-finder/pages/QuickQuery/common/js/cookieStatement.js">
+  </script>
+  <script async="" src="/info-finder/pages/QuickQuery/common/js/cookieStatementTool.js">
+  </script>
+  <div class="iconfont icon-up" id="global-top-button" style="display:none;box-shadow: rgb(238, 238, 238) 0px 0px 8px;;border-radius:2px;background:#fff;position:fixed;bottom:100px;right:35px;width:56px;height:56px;text-align:center;padding-top:10px;font-size:33px;color: #999;cursor:pointer;z-index:1001;line-height:1;">
+  </div>
+  <div aria-describedby="doc_feedback" aria-labelledby="ui-id-1" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" role="dialog" style="display: none;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle">
+    <span class="ui-dialog-title" id="ui-id-1">
+     Feedback
+    </span>
+    <button class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close" type="button">
+     <span class="ui-button-icon ui-icon ui-icon-closethick" style="position: absolute; top: 50%; left: 50%; margin-top: -8px; margin-left: -8px;">
+     </span>
+     <span class="ui-button-icon-space">
+     </span>
+     Close
+     <span class="ui-button-icon ui-icon ui-icon-closethick" style="position: absolute; top: 50%; left: 50%; margin-top: -8px; margin-left: -8px;">
+     </span>
+     <span class="ui-button-icon-space">
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="doc_feedback" style="">
+   </div>
+  </div>
+ </body>
+ <!-- datePicker里面需要使用 -->
+</html>

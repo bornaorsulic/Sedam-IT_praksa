@@ -1,0 +1,26 @@
+1695819939684	geckodriver	INFO	Listening on 127.0.0.1:50943
+1695819942757	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50944" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\borna\\AppData\\Local\\Temp\\rust_mozprofileWQsSMk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695819943172	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695819943370	Marionette	INFO	Listening on port 50955
+WebDriver BiDi listening on ws://127.0.0.1:50944
+Read port: 50955
+1695819943638	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50944/devtools/browser/2d5211f5-64ef-4b6f-aea3-aa3e5bcdb9dc
+JavaScript warning: https://assets.adobedtm.com/4986d14b069a/c34b863f5889/launch-ENfe2a15f190024232a31e8b2ae00d6784-development.min.js, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js, line 3: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.hpe.com/global/metrics/chat/chat-init/chat-init.js, line 4: TypeError: i is undefined
+JavaScript error: https://www.hpe.com/global/metrics/chat/chat-init/chat-init.js, line 4: TypeError: e is not a function
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://www.hpe.com/global/metrics/chat/chat-init/chat-init.js, line 4: ChunkLoadError: Loading chunk 520 failed.
+(undefined: undefined)
+JavaScript error: https://assets.adobedtm.com/4986d14b069a/c34b863f5889/launch-ENfe2a15f190024232a31e8b2ae00d6784-development.min.js, line 6: TypeError: n is not a function
+JavaScript warning: https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js, line 3: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript error: https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js, line 3: TypeError: e is undefined
+JavaScript error: https://assets.adobedtm.com/4986d14b069a/c34b863f5889/launch-ENfe2a15f190024232a31e8b2ae00d6784-development.min.js, line 6: TypeError: n is not a function
+JavaScript error: https://assets.adobedtm.com/4986d14b069a/c34b863f5889/launch-ENfe2a15f190024232a31e8b2ae00d6784-development.min.js, line 7: TypeError: d.callback is not a function
+JavaScript error: https://assets.adobedtm.com/4986d14b069a/c34b863f5889/launch-ENfe2a15f190024232a31e8b2ae00d6784-development.min.js, line 7: TypeError: d.callback is not a function
+1695819954141	Marionette	INFO	Stopped listening on port 50955
+Dynamically enable window occlusion 1
